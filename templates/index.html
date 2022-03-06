@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="user">
+            <form action="/dojo" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="">
+            </div>
+        <div class="places">
+            <label for="/dojo">Dojo Location</label>
+            <select name="location">
+                <option value="LA">Los Angeles</option>
+                <option value="NY">New York</option>
+                <option value="SF">San Francisco</option>
+                <option value="SD">San Diego</option>
+            </select>
+        </div>
+        <div class="languages">
+            <label for="/dojo">Favorite Software Language</label>
+                <select name="language">
+                    <option value="Python">Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                </select>
+                <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    </body>
+</html>
